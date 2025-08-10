@@ -10,7 +10,7 @@ class Settings(BaseSettings):
     environment: str = "development"
     
     # Database Settings
-    db_host: str = "localhost"
+    db_host: str = "13.236.178.184"
     db_port: int = 3306
     db_user: str = "user"
     db_password: str = "pass"
@@ -26,7 +26,7 @@ class Settings(BaseSettings):
     gemini_model: str = "gemini-2.0-flash-exp"
     
     # CORS Settings
-    allowed_origins: str = "http://localhost:3000,http://127.0.0.1:3000,http://localhost:3001,http://127.0.0.1:3001"
+    allowed_origins: str = "http://13.236.178.184:3000,http://13.236.178.184:3001"
     
     @property
     def cors_origins(self) -> list:
